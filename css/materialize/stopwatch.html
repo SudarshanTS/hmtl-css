@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<style>
+	#outerCircle{
+	background: gainsboro;
+    position: relative;
+    border-radius: 50%;
+    top: 57px;
+    left: 33%;
+    height: 308px;
+    width: 24%;
+    border: 14px solid grey;
+    overflow: hidden;
+} 
+#timeStamp{
+	position: absolute;
+    height: 121px;
+    width: 100%;
+    text-align: -webkit-center;
+    top: 18%;
+    font-size:28px;
+    color: blue;
+}
+#Seconds{
+	position: relative;
+    text-align: -webkit-center;
+    top: 94px;
+    font-size: 44px;
+    color: #08d8ce;
+ }   
+#buttons{
+    position: absolute;
+    bottom: 0px;
+    left: 2%;
+    display: flex;
+    height: 100px;
+    width: 96%;
+}
+.buttonStyle{
+    width: 50%;
+    border: none;
+    cursor: pointer;
+    color: white;
+   }
+#playPause{
+  background: green;
+}
+#reset{
+  background: blue;
+ 
+}
+</style>
+</head>
+<body>
+<div id="outerCircle">
+    <div id="timeStamp"></div>	
+	<div id="Seconds"></div>
+	<div id="buttons">
+		<button class="buttonStyle" id="playPause"><i class="material-icons large" id="playPauseIcon" style="font-size:4rem;margin-bottom: 15px;width: 100%;" onclick="play()">play_arrow</i></button>
+		<button class="buttonStyle" id="reset"><i class="material-icons large" style=" font-size:4rem;margin-bottom: 15px;width: 100%;" onclick="reset();">refresh</i></button>
+     </div>
+</div>
+<script type="text/javascript" src="stopwatch.js"></script>
+</body>
+</html>

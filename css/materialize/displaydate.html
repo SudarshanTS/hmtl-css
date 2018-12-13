@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.switch {
+  position: absolute;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  left: 39%;
+}
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+}
+input:checked + .slider {
+  background-color: #2196F3;
+}
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+.slider.round {
+  border-radius: 34px;
+}
+.slider.round:before {
+  border-radius: 50%;
+}
+#outerCircle{
+	background: #000000b8;
+    position: relative;
+    border-radius: 50%;
+    top: 57px;
+    left: 33%;
+    height: 211px;
+    width: 16%;
+} 
+#innerCircle{
+    background: #000000b8;
+    position: absolute;
+    border-radius: 50%;
+    top: 8%;
+    left: 9%;
+    height: 31%;
+    width: 82%;
+    color: #1fbdd6;
+    font-size: 36px;
+    text-align: -webkit-center;
+    padding: 56px 0px;
+}	
+#displayInfo{
+    position: absolute;
+    color: #0014ff;
+    text-align: -webkit-center;
+    width: 100%;
+    font-size: 18px;
+    bottom: 71px;
+}
+
+</style>
+</head>
+<body >
+ <label class="switch">
+  <input type="checkbox" id="toggle" onchange="display()">
+  <span class="slider round"></span>
+</label>
+<div id="outerCircle">
+	<div id="innerCircle"></div>
+	<div id="displayInfo" style="display: none;"></div>
+</div>
+<script>
+	var displayDate=document.getElementById('innerCircle');
+	var storevalue=new Date();
+	var info=document.getElementById('displayInfo');
+	var seconds;
+	setTime();
+	function setTime(){
+     storevalue=new Date();	
+	 var hour=storevalue.getHours();
+	 var minutes=storevalue.getMinutes();
+	 seconds=storevalue.getSeconds();
+	 hour=checkTime(hour);
+	 minutes=checkTime(minutes);
+	 seconds=checkTime(seconds);
+     displayDate.innerHTML=hour+":"+minutes+":"+seconds;
+     setTimeout(setTime, 1000);
+    }
+    var days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+    const month = ["January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December"];
+    var dayName = days[storevalue.getDay()];
+    var monthNames= month[storevalue.getMonth()];
+    var date=storevalue.getDate();
+    var year=storevalue.getUTCFullYear();
+    info.innerHTML=dayName+" "+date+" "+monthNames+" "+year;
+    function display(){
+     if(document.getElementById("toggle").checked==true){
+     	info.style.display="block";
+      }
+    else{
+        info.style.display="none";	
+       
+       }
+    }
+    function checkTime(i){
+    	if(i<10){
+    		i="0"+i;
+    	}
+    	return i;
+    }
+</script>
+</body>
+</html>

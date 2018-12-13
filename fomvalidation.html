@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	    body{
+	    	margin: 0px;
+	    }
+	   
+		#validation{
+			font-size: 17px;
+		    height: 395px;
+		    
+			display: grid;
+		    position: absolute;
+		    width: 19%;
+		    padding: 1% 1%;
+
+		}
+		#Submit{
+			width: 50%;
+		    height: 28px;
+		    background-color:#C4D221;
+		    border: none;
+		    cursor: pointer;
+		    position: relative;
+            left: 15%;
+		}
+		.Style{
+			margin-top: 3px;
+			width: 93%;
+			border-radius: 2px 2px 2px 2px;
+			
+			height: 20px;
+		}
+		.spacebtw
+		{
+		  	margin-top: 6px;
+		  	display: grid;
+		}
+		.erroMessage{
+		   /* padding: 0px 13px;*/
+		    color: #dc1414;
+		    font-size: 14px;
+		    opacity:1;
+		    transition:opacity 200ms;
+         }
+
+		}
+</style>
+</head>
+<body>
+<div id="validation">
+	<form name="valid" >
+		<div class="spacebtw"><label>FirstName</label><input type="text" id="firstName" class="Style" autocomplete="off" class="Style">
+			<div id="errfn" class="erroMessage"></div>
+		</div>
+	    <div class="spacebtw"><label>LastName</label><input type="text" id="lastName" class="Style" autocomplete="off"><div id="errln" class="erroMessage"></div></div>
+		<div style="display: grid;"class="spacebtw"><label>Email</label><input type="email" id="Email" class="Style" >
+		<div id="erremail" class="erroMessage"></div> 	
+		</div>
+		<div style="display: grid;" class="spacebtw"><label>UserID</label><input type="text" id="userID" class="Style" autocomplete="off">
+		<div id="erruserid" class="erroMessage"></div>	
+		</div>
+		<div class="spacebtw"><label>Password</label><input type="password" id="password" class="Style" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+	    <div id="errpwd" class="erroMessage"></div>		
+		</div>
+	    <div class="spacebtw"><label>Confirm Password</label><input type="password" id="confirmpassword" class="Style">
+	    <div id="errconfirmpwd" class="erroMessage"></div> 	
+	    </div>
+		<input type="button" value="submit" id="Submit" onclick="checkValidation()" class="spacebtw">
+    </form>
+</div>
+<script type="text/javascript" src="fomvalidation.js"></script>
+</body>
+</html>

@@ -1,0 +1,229 @@
+#Nav {
+  background: black;
+  height: 104px;
+  padding: 37px;
+}
+
+#heading {
+  height: 104px;
+  padding-top: 17px;
+  font-size: 29px;
+  display: flex;
+  width:30.333333%; 
+  background: gold;
+}
+
+#Logo {
+  background: gold;
+  height: 104px;
+  width: 26%;
+}
+
+#menubar{
+	display: none;
+}
+
+.Style {
+  margin: 0px 4px 2px 49px;
+}
+
+li a:hover {
+  color: orange;
+}
+
+.parallax {
+  background-image: url("img.gif");
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#text {
+  width: 40%;
+  color: white;
+  font-size: 55px;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  text-align: center;
+}
+
+#arrow {
+  width: 40%;
+  color: white;
+  font-size: 55px;
+  position: relative;
+  top: 50%;
+  left: 30%;
+  text-align: center;
+}
+
+.parallaximg {
+  background-image: url("img1.jpg");
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#details{
+	 background: gold;
+	 height: 150px;
+}
+
+
+.line {
+  width: 4px;
+  height: 100px;
+  background: white;
+  margin: 50% 0px;
+}
+#award{color: white;font-size: 50px;padding: 0px 20px;}
+#clients{
+  background: lightgrey;height: 30vh;
+}
+.cardimageHeight{
+	height: 500px;
+}
+
+#logo {
+  padding: 50px 4px;text-align: center; margin-left: 18%;font-size: 34px;
+}
+#map{
+	width:100%;
+	height:480px;
+}
+#applicationText{
+  margin: 0px 137px;width: 296px;
+}
+.sample {
+  background: silver;
+  opacity: 0.5;
+  margin-bottom: 5px;
+  border-bottom: none;
+  height: 40px;
+  padding: 0px 6px;
+}
+.sample:hover{
+	background: grey;
+}
+#message {
+  height: 150px;
+}
+#companyInfo{
+	text-align: center;
+	height: 500px;
+}
+#phoneNumber{
+font-size: 30px;
+margin: 0px 115px;
+}
+.icon {
+  background: lightgrey;
+  border-radius: 50%;
+  width: 60px;
+  color: white;
+  padding: 11px 9px;
+  margin: 13px;
+  cursor: pointer;
+  font-size: 25px;
+  text-align: -webkit-center;
+}
+
+#circle {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+}
+@media only screen and (max-width: 360px)   {
+	html,body{
+		overflow-x: hidden;
+		width: 360px;
+	}
+	.parallax{
+    background-image: url(img.gif);
+    height: 82vh;
+    background-position: center;
+    background-attachment: unset;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+	}
+	
+	#menubar{
+		position: absolute;
+        top: 100%;
+        width: 100%;
+        left: 0px;
+		text-align: center;
+		background: black;
+		color: white;
+
+	}
+   #text{
+    width: 100%;
+    color: white;
+    font-size: 29px;
+    position: absolute;
+    top: 35%;
+    left: 0%;
+    text-align: center;
+}
+#arrow{
+	left:34%;
+}
+#heading{
+	height: 104px;
+    padding-top: 17px;
+    font-size: 29px;
+    display: flex;
+    width: 100%;
+    background: gold;
+}
+#details{
+	 background: gold;
+	 height: 305px;
+	 padding-left: 20px;
+}
+.line{
+  visibility: hidden;
+}
+#award{color: white;font-size: 50px;padding: 0px 20px;}
+#clients{
+  background: lightgrey;
+  height: 50vh;
+}
+#logo {
+  padding: 50px 4px;
+  text-align: center; 
+  margin-left: 3%;
+  font-size: 34px;
+}
+#map{
+	width:100%;
+	height:480px;
+}
+#applicationText{
+  width: 296px;
+  margin: 0px;
+}
+.cardimageHeight{
+	height: 300px;
+}
+#companyInfo{
+   text-align: left;
+	height: 500px;
+}
+#phoneNumber{
+font-size: 23px;
+margin: 0px;
+}
+
+}

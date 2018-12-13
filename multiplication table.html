@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		#inputs{
+			display: grid;
+            width: 11%;
+		}
+		.inputStyle{
+			border-radius: 2px;
+		}
+      input[type=number]::-webkit-inner-spin-button, 
+      input[type=number]::-webkit-outer-spin-button { 
+   					 -webkit-appearance: none;
+   			}
+   	#multiplicationTable{
+    width: 90%;
+    height: 28px;
+    background-color:#C4D221;
+    border: none;
+    cursor: pointer;
+    margin-top: 3px;
+   	}	
+   	table 
+        {
+            width: 28%;
+            font: 17px Roboto;
+        }
+table, th, td 
+        {
+            border: solid 1px #DDD;
+            border-collapse: collapse;
+            padding: 2px 3px;
+            text-align: center;
+
+        }	
+	</style>
+</head>
+<body>
+ <div id="inputs">
+ 	<label>Number of rows</label><input type="Number"class="inputStyle" id="Rows">
+ 	<label>Number of colnums</label><input type="Number"class="inputStyle" id="Colnums">
+ 	<label>Number to multiply</label><input type="Number"class="inputStyle" id="Value">
+ 	<input type="button" value="Multiplication Table" onclick="createTable()" id="multiplicationTable">
+ </div>
+ <table id="myTable"style="margin-top: 5px;"> 
+</table>
+ <script type="text/javascript" src="mult.js"></script>
+</body>
+</html>

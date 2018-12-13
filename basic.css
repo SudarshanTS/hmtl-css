@@ -1,0 +1,106 @@
+*{
+	box-sizing:border-box;
+}
+body{
+	background-color:peru; 
+}
+
+.box1 
+	{
+	position:absolute; 
+	margin: 10px 0;	
+	height:65px;
+	width: 80%;
+	left: 150px;
+	background-image:linear-gradient(goldenrod 99%,goldenrod 1%); 
+	}
+
+.box2
+	{
+    position: absolute;
+	margin: 10px 0;	
+	height:65px;
+	width: 100%;
+	top:85px;
+	right:10px; 
+	overflow:auto;  
+	background-image:linear-gradient(goldenrod 99%,goldenrod 1%); 
+	}
+.box1 h1{
+	text-align:center;
+	color:white;
+	font-family:Century Gothic;   
+}
+ ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    word-spacing:2px; 
+}
+  li {
+    text-anchor:middle;
+    display:inline-block;  
+    color:white;
+    font-family:Century Gothic; 
+    letter-spacing: 1px;
+    padding-top:20px; 
+    padding-left: 100px;
+}
+  
+.box3
+	{
+    position: absolute;
+	margin: 10px0;	
+	height:auto;
+	width: 80%;
+	top:180px;
+	left:150px;  
+	overflow:hidden;  
+	background-image:linear-gradient(white 99%,white 1%); 
+	}
+	
+.center{
+	margin: auto;
+}	
+ 
+ .box3 h1{
+     font-family:Century Gothic;
+    
+     color:goldenrod;
+     padding:10px 330px;   
+ }
+ #wapper {
+ 	display: flex;
+    width: 500px;
+    margin: 0 auto;
+}
+.one{
+    width: 200px;
+    height: 200px;
+    background: goldenrod;
+    padding: 50px 50px;
+    margin: 20px;
+}
+.box3 #th{
+	margin-left: 5px;
+    position: absolute;
+    top: 364px;
+    border-top: 1px dashed #170c01;
+    width: 890px;
+}
+.box3 h2{
+
+  	padding:10px;
+	color:brown;
+	margin-top:30px; 
+}
+ .box3 p{
+ 	text-align:justify-all;  
+	color:black;
+	padding-left:10px; 
+	}
+
+
+ 
+ 

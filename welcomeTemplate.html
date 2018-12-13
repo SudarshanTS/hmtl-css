@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<head>
+  <style>
+    body {
+      margin: 0px;
+      padding: 0px;
+      font-family: Roboto;
+    }
+
+    #wapper {
+
+      text-align: -webkit-center;
+      background-image: url("cloud.jpg");
+      color: white;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100%;
+    }
+
+    #innerBox {
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #inputBox {
+      border-bottom: 1px solid green;
+      outline-style: none;
+      width: 30%;
+      color: black;
+      font-size: 34px;
+    }
+
+    #downloadButton {
+      border-radius: 10px;
+      height: 45px;
+      width: 36%;
+      margin: auto;
+      background-color: green;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+    }
+
+    a {
+      font-size: 30px;
+      color: white;
+      text-decoration: none;
+    }
+
+    #welcomeText {
+      font-size: -webkit-xxx-large;
+      color: yellow;
+      letter-spacing: 3px;
+      font-family: Roboto;
+      margin: 0px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="wapper">
+    <div id="innerBox">
+      <p id="welcomeText">WELCOME</p>
+      <div id="inputBox" contenteditable></div>
+    </div>
+    <div style="height: 405px;display: flex;align-items: center;justify-content: center; ">
+      <img src="bulb.jpg" style="width: 28%;">
+    </div>
+    <div style="opacity: 0.6;width: 62%;">
+      <p style="color:black;font-size: 21px;text-align-last: center;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
+        quis, sem. Nulla consequat massa quis enim.</p>
+    </div>
+    <a href="bulb.jpg" download="bulb.jpg" id="downloadButton">
+   	    	<i class="material-icons">file_download</i>
+   	    Download</a>
+  </div>
+
+</body>
+
+</html>

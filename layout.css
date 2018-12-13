@@ -1,0 +1,44 @@
+* {
+	box-sizing: border-box;
+}
+
+
+	.box{
+		height:20px; 
+		background-image: linear-gradient(darkgrey 99%,grey 1%);
+	}
+	.box2{
+        margin:10px 0;
+        margin-left:10px 0; 
+		height:625px; 
+		width:150px; 
+		
+		background-image:linear-gradient(pink 99%,lightpink 1%);   
+	}
+	.box3{
+        margin:10px 0; 
+		height:600px; 
+		width:150px; 
+	    background-image:linear-gradient(pink 99%,lightpink 1%);   
+	}
+	
+	.innerBox 
+	{
+	height:300px;
+	width: 75%;
+	background-image:linear-gradient(pink 99%,lightpink 1%); 
+	
+	
+   }
+   .center{
+        margin:auto;
+      }
+    
+	.left{
+   	    float:left; 
+   }
+   .right{
+   	  float:right; 
+   }
+   
+} 

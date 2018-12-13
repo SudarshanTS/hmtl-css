@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+        body{
+        	margin: 0px;
+        	background:#710e0e;
+        }
+
+		#wapper{
+	            height: 365px;
+			    display: grid;
+			    row-gap: 32px;
+			    width: 98%;
+			    grid-template-columns: auto;
+			    padding: 18px 13px;
+		}
+		.inputStyle{
+			outline-style: none;
+		    border: none;
+		    border-bottom: 2px solid orange;
+		    margin-bottom: 52px;
+		    color: deepskyblue;
+            font-size: 45px;
+		}
+		.inputStyle:hover{
+			border: 1px solid orange;
+			background:lightblue;
+
+		}
+		.inputparentStyle{
+			display: grid;
+            width: 13%
+		}
+          #result{
+          	background-color: #C4D221;
+          	border: none;
+          	width: 78px;
+          	height: 30px;
+          	cursor: pointer;
+          }
+          label{
+          	
+          	font-size: 30px;
+          	margin-bottom: 5px;
+          }
+          ::placeholder{
+             color:grey;	
+          }
+          #demo{
+          	font-size: 25px;
+            color: cornflowerblue;
+          }
+          #relation{
+          	font-size: 33px;
+        
+          }
+   .modal {
+    display: none; 
+    position: fixed;
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    display: flex;
+    position: absolute;
+    left: 8%;
+    height: 120px;
+}
+
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    right: 11px;
+    top: 0px;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+#image{
+	width: 100px;
+	height: 100px;
+}
+</style>
+</head>
+<body>
+ <div id="wapper">
+ 	<div>
+   	<div id="" class="inputparentStyle">
+   	  <label>Name Of First Person</label>
+   	  <input type="text" id="firstPerson" class="inputStyle" placeholder="Name">
+    </div>
+    <div id="" class="inputparentStyle">
+   	   <label>Name Of Second Person</label>
+   	   <input type="text" id="secondPerson" class="inputStyle" placeholder="Name">
+    </div>
+    <button id="result" onclick="resultDisplay()">Result</button>
+    </div>
+   <div id="demo"></div>
+</div>
+<div id="relation"class="modal">
+	 
+  <div class="modal-content">
+  <span class="close">&times;</span>
+   <p id="relationship"></p>
+   <div id="image">
+   
+   </div>
+
+</div>
+   
+</div>
+<script type="text/javascript" src="flames.js"></script>
+</body>
+</html>

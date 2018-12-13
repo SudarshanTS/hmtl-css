@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+    #box{
+    height: 279px;
+    position: relative;
+    width: 30%;
+    left: 33%;
+    border: 1px solid black;
+    border-radius: 2%;
+    background: #d3d3d391;
+    } 
+    #count{
+    position: absolute;
+    text-align: -webkit-center;
+    font-size: 9rem;
+    color: darkgrey;
+    width: 100%;
+    top: 7%;
+    }
+    #warpper{
+      display: flex;
+      position: absolute;
+      bottom: 0px;
+      height: 89px;
+      width: 100%;
+    }
+    .box-style{
+          height: 100%;
+          width: 34%;
+          border: none;
+          font-size:60px;
+          color: wheat;
+          cursor: pointer;
+          outline-style: none;
+    }
+    #plus{
+      float: left;
+      background: #20b720f2;
+     
+    }
+    #reset{
+         background: #f9f900f0;
+         color: black;
+    }
+    #minus{
+      float: right;
+      background: #ff0000c7;
+    }
+  </style>
+</head>
+<body>
+   <div id="box">
+    <div id="count">0</div>
+   	 <div id="warpper">
+   	 	<button id="plus" class="box-style" onclick="increment()">+</button>
+      <button id="reset" class="box-style" onclick="reset()">C</button>
+      <button id="minus"class="box-style" onclick="decrement()">-</button>
+   	 </div>
+</div>
+<script>
+ var number=0;
+  function increment() {
+    ++number;
+    document.getElementById("count").innerHTML=number;
+ }
+  function reset() {
+    number=0;
+    document.getElementById("count").innerHTML=number;
+  }
+  function decrement() {
+    --number;
+    document.getElementById("count").innerHTML=number;
+  }
+</script>
+</body>
+</html>

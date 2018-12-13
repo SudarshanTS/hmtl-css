@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" type="text/css" href="manualtimer.css">
+  </head>
+
+  <body>
+    <div id="mainDiv">
+      <div id="display">
+        <div class="displayStyle">H</div>
+        <div class="displayStyle">M</div>
+        <div class="displayStyle">S</div>
+      </div>
+      <div id="timmer">
+        <div class="timmerStyle" id="hour" contenteditable maxlength="2" onfocus="hourSelected()"></div>
+        <div class="timmerStyle" id="minutes" contenteditable maxlength="2" onfocus="minSelected()"></div>
+        <div class="timmerStyle" id="seconds" contenteditable maxlength="2" onfocus="secSelected()"></div>
+      </div>
+      <div id="keypad">
+        <button class="buttonStyle" onclick="key(1)">1</button>
+        <button class="buttonStyle" onclick="key(2)">2</button>
+        <button class="buttonStyle" onclick="key(3)">3</button>
+        <button class="buttonStyle" onclick="key(4)">4</button>
+        <button class="buttonStyle" onclick="key(5)">5</button>
+        <button class="buttonStyle" onclick="key(6)">6</button>
+        <button class="buttonStyle" onclick="key(7)">7</button>
+        <button class="buttonStyle" onclick="key(8)">8</button>
+        <button class="buttonStyle" onclick="key(9)">9</button>
+        <button class="buttonStyle" onclick="Reset()">X</button>
+        <button class="buttonStyle" onclick="key(0)">0</button>
+        <button class="buttonStyle" onclick="backSpace()">Backspace</button>
+      </div>
+      <button id="Startbtn" onclick="start()">START</button>
+    </div>
+    <script type="text/javascript" src="manualtimer.js"></script>
+  </body>
+
+</html>

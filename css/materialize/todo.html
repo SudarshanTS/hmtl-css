@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="todo.css">
+	<script type="text/javascript" src="todo.js"></script>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+         </head>
+<body>
+   <div class="container">
+       <div class="row">
+      <form class="col s12">
+        <div class="row">		         
+        	<div class="input-field col s12">
+          	<h5>Expenses</h5>
+            <textarea id="expenses" class="materialize-textarea" data-length="120">0</textarea>
+            <label for="input_text"></label>
+          </div>
+        </div>
+          <div class="input-field col s12">
+          	<h5>Income</h5>
+            <textarea id="income" class="materialize-textarea" data-length="120">0</textarea>
+            <label for="textarea2"></label>
+          </div>
+        </div>
+		<a class="btn-floating btn-large waves-effect waves-light red right" id="add" onclick="Expenses()"><i class="material-icons">remove</i></a>
+	<a class="btn-floating btn-large waves-effect waves-light red" id="remove" onclick="Income()"><i class="material-icons">add</i></a>
+      <form class="col s12">
+        <div class="row">
+          
+      <form class="col s12">
+        <div class="row">
+        	<div class="input-field col s6">
+          	<h5>Name</h5>
+            <input id="name" type="text" data-length="10">
+            <label for="input_text"></label>
+          </div>
+          <div class="input-field col s6">
+          	<h5>Amount</h5>
+            <input id="amount" type="text" data-length="10">
+            <label for="input_text"></label>
+          </div>
+      </div>
+      	  <div class="row">
+          <div class="input-field col s12">
+          	<h5>Total</h5>
+          	<textarea id="total" class="materialize-textarea" data-length="120"></textarea>
+            <label for="textarea2"></label>
+          </div>
+        </div>
+
+         <div class="row ">	
+   			<div class="col s4"id="editname"></div>
+   			<div class="col s4"id="editamount"></div>
+   			<div class="col s4 save"id="editsave"></div>
+   	     </div>
+   	    
+   		
+</div>
+   			
+</div>
+
+
+
+    </div>
+  
+
+    </body>
+</html>
